@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Egyptian Themed Website</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="script.js" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="icons">
+        <img src="phone-icon.png" alt="Phone" class="icon" />
+        <img src="desktop-icon.png" alt="Desktop" class="icon" />
+      </div>
+    </header>
+
+    <!-- Landing Page -->
+    <section class="landing">
+      <div class="rectangle">
+        <video
+          id="background-video"
+          autoplay
+          loop
+          muted
+          poster="https://assets.codepen.io/6093409/river.jpg"
+        >
+          <source src="content/108420-680178323_medium.mp4" type="video/mp4" />
+        </video>
+        <section class="">
+      </div>
+      <div class="floating-book">
+        <img
+          src="content/file (13).png"
+          alt="Floating Book"
+          class="clickable"
+        />
+      </div><div class="book-display">
+        <img src="content/front book.jpg" alt="Book Front" class="book-image" />
+        <img src="content/book.jpg" alt="Book Spine" class="book-image" />
+        <img src="cont" alt="Book Back" class="book-image" />
+      </div>
+        />
+      </div></section>
+    </section>
+
+    <!-- Second Section -->
+    <section class="second-section">
+      <div class="rectangle-left">
+        <img src="content/121105.jpg" alt="Smaller Image" class="clickable" />
+      </div>
+    </section>
+
+    <!-- Third Section -->
+    <section class="third-section">
+      <img
+        src="landscape-image.jpg"
+        alt="Landscape Image"
+        class="landscape-image clickable"
+      />
+    </section>
+
+    <!-- Last Section -->
+    <section class="last-section">
+      <div class="scrolling-text">
+        <p id="bible-verse">
+          Now these are the names of the children of Israel, which came into
+          Egypt... (entire text as given).
+        </p>
+      </div>
+      <button onclick="toggleAudio()">Play/Pause Audio</button>
+      <audio id="bible-audio" src="bible-audio.mp3"></audio>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

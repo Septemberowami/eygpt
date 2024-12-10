@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+  font-family: "Cairo", sans-serif; /* Clean Egyptian-styled font */
+  background-color: #fad6a5; /* Pastel orange background */
+  color: #8b4513; /* Caramel brown font */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+  width: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Landing Section */
+.landing {
+  position: relative;
+  height: 80vh;
+  background: url("background.gif") center/cover no-repeat;
+}
+
+.rectangle {
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  opacity: 10%;
+  position: absolute;
+  width: 1800px;
+  height: 720px;
+  background-color: white;
+}
+
+.tilted-file {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  width: 80%;
+  cursor: pointer;
+}
+
+.floating-book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.floating-book .clickable {
+  width: 500px;
+  max-width: 90%;
+
+  animation: float 3s infinite;
+  cursor: pointer;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(-10px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(10px);
+  }
+}
+
+.book-display {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.book-image {
+  width: 150px;
+  height: 750px;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  width: 500px;
+  height: 700px;
+}
+.small-image {
+  width: 500vh;
+  height: 700hv;
+
+  cursor: pointer;
+}
+
+/* Second Section */
+.second-section {
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px;
+  height: 80vh;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.rectangle-left {
+  width: 60%;
+  height: 80%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.rectangle-left img {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Third Section */
+.third-section {
+  height: 100vh;
+}
+
+.landscape-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Last Section */
+.last-section {
+  background-color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.scrolling-text {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scrolling-text p {
+  position: absolute;
+  animation: scroll 15s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
